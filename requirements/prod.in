@@ -1,0 +1,4 @@
+fastapi
+py-money
+email-validator
+uvicorn
