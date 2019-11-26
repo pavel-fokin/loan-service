@@ -19,6 +19,11 @@ requirements:
 	@pip-compile requirements/dev.in -o requirements/dev.txt
 	@pip-compile requirements/prod.in -o requirements/prod.txt
 
+.PHONY: install
+install:
+	@pip install -r requirements/dev.txt
+	@pip install -r requirements/prod.txt
+
 .PHONY: lint
 lint:
 	@flake8 app tests
