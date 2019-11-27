@@ -31,4 +31,4 @@ lint:
 
 .PHONY: run
 run:
-	uvicorn app.main:app
+	uvicorn app.main:app --host 0.0.0.0
