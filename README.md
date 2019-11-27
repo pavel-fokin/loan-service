@@ -1,3 +1,6 @@
+[![CircleCI](https://circleci.com/gh/fokinpv/loan-service.svg?style=svg)](https://circleci.com/gh/fokinpv/loan-service)
+[![codecov](https://codecov.io/gh/fokinpv/loan-service/branch/master/graph/badge.svg)](https://codecov.io/gh/fokinpv/loan-service)
+
 # Toy Loan Simulator
 
 This service is simulating loan processing.
