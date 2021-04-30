@@ -4,31 +4,66 @@
 #
 #    pip-compile --output-file=requirements/dev.txt requirements/dev.in
 #
-astroid==2.3.3            # via pylint
+astroid==2.3.3
+    # via pylint
 asynctest==0.13.0
-attrs==19.3.0             # via pytest
-certifi==2019.9.11        # via requests
-chardet==3.0.4            # via requests
-coverage==4.5.4           # via pytest-cov
-entrypoints==0.3          # via flake8
+    # via -r dev.in
+attrs==19.3.0
+    # via pytest
+certifi==2019.9.11
+    # via requests
+chardet==3.0.4
+    # via requests
+coverage==4.5.4
+    # via pytest-cov
+entrypoints==0.3
+    # via flake8
 flake8==3.7.9
-idna==2.8                 # via requests
-isort==4.3.21             # via pylint
-lazy-object-proxy==1.4.3  # via astroid
-mccabe==0.6.1             # via flake8, pylint
-more-itertools==7.2.0     # via pytest
-packaging==19.2           # via pytest
-pluggy==0.13.1            # via pytest
-py==1.8.0                 # via pytest
-pycodestyle==2.5.0        # via flake8
-pyflakes==2.1.1           # via flake8
+    # via -r dev.in
+idna==2.8
+    # via requests
+isort==4.3.21
+    # via pylint
+lazy-object-proxy==1.4.3
+    # via astroid
+mccabe==0.6.1
+    # via
+    #   flake8
+    #   pylint
+more-itertools==7.2.0
+    # via pytest
+packaging==19.2
+    # via pytest
+pluggy==0.13.1
+    # via pytest
+py==1.8.0
+    # via pytest
+pycodestyle==2.5.0
+    # via flake8
+pyflakes==2.1.1
+    # via flake8
 pylint==2.4.4
-pyparsing==2.4.5          # via packaging
+    # via -r dev.in
+pyparsing==2.4.5
+    # via packaging
 pytest-cov==2.8.1
+    # via -r dev.in
 pytest-mock==1.12.1
+    # via -r dev.in
 pytest==5.3.0
+    # via
+    #   -r dev.in
+    #   pytest-cov
+    #   pytest-mock
 requests==2.22.0
-six==1.13.0               # via astroid, packaging
-urllib3==1.25.7           # via requests
-wcwidth==0.1.7            # via pytest
-wrapt==1.11.2             # via astroid
+    # via -r dev.in
+six==1.13.0
+    # via
+    #   astroid
+    #   packaging
+urllib3==1.25.8
+    # via requests
+wcwidth==0.1.7
+    # via pytest
+wrapt==1.11.2
+    # via astroid
