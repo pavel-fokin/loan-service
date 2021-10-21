@@ -4,18 +4,33 @@
 #
 #    pip-compile --output-file=requirements/prod.txt requirements/prod.in
 #
-babel==2.7.0              # via py-money
-click==7.0                # via uvicorn
-dnspython==1.16.0         # via email-validator
+babel==2.9.1
+    # via py-money
+click==7.0
+    # via uvicorn
+dnspython==1.16.0
+    # via email-validator
 email-validator==1.0.5
+    # via -r prod.in
 fastapi==0.42.0
-h11==0.8.1                # via uvicorn
-httptools==0.0.13         # via uvicorn
-idna==2.8                 # via email-validator
+    # via -r prod.in
+h11==0.8.1
+    # via uvicorn
+httptools==0.0.13
+    # via uvicorn
+idna==2.8
+    # via email-validator
 py-money==0.4.0
-pydantic==0.32.2          # via fastapi
-pytz==2019.3              # via babel
-starlette==0.12.9         # via fastapi
+    # via -r prod.in
+pydantic==0.32.2
+    # via fastapi
+pytz==2019.3
+    # via babel
+starlette==0.12.9
+    # via fastapi
 uvicorn==0.10.8
-uvloop==0.14.0            # via uvicorn
-websockets==8.1           # via uvicorn
+    # via -r prod.in
+uvloop==0.14.0
+    # via uvicorn
+websockets==8.1
+    # via uvicorn
